@@ -1,0 +1,968 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+  font-family: Arial, sans-serif; /* Base font */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+/* Header styling */
+.header {
+  display: flex; /* Flexbox layout for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items out horizontally */
+  padding: 10px 20px; /* Inner padding for the header */
+  background-color: #004d99; /* Dark blue background */
+  color: #fff; /* White text color */
+}
+
+/* Logo styling */
+.header .logo {
+  font-size: 24px; /* Font size for the logo */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Search bar container */
+.header .search-bar {
+  display: flex; /* Flexbox layout for alignment */
+  align-items: center; /* Center items vertically */
+  background-color: #fff; /* White background for the search bar */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Ensure elements don't overflow the container */
+ 
+  
+}
+
+/* Input field styling */
+.header .search-bar input {
+  border: none; /* Remove default border */
+  padding: 8px 10px; /* Inner padding for input */
+  outline: none; /* Remove focus outline */
+  flex: 1; /* Allow input to take up available space */
+}
+
+/* Search button styling */
+.header .search-bar button {
+  background-color: #004d99; /* Match header color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Hover effect for search button */
+.header .search-bar button:hover {
+  background-color: #003366; /* Darker shade of blue */
+}
+
+/* Menu button styling */
+.header .menu-btn {
+  background: none; /* Transparent background */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  font-size: 24px; /* Larger font size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Banner section styling */
+.banner {
+  text-align: center; /* Center align text */
+  background: url('banner.jpg') no-repeat center center/cover; /* Placeholder image */
+  padding: 50px 20px; /* Padding around banner text */
+  color: #fff; /* White text color for contrast */
+  background-color: #004d99; /* Fallback color in case image doesn't load */
+  min-height: 60vh; /* Set banner height */
+  display: flex; /* Flexbox layout for alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  margin-top: 10px;
+  
+}
+
+/* Banner heading styling */
+.banner h1 {
+  font-size: 36px; /* Large font size for the main heading */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Banner paragraph styling */
+.banner p {
+  font-size: 18px; /* Medium font size for subheading */
+  margin-bottom: 20px; /* Space below the text */
+}
+
+/* Banner button styling */
+.banner-btn {
+  background-color: #ffcc00; /* Bright yellow for button */
+  color: #004d99; /* Contrast text color */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Button text size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Hover effect for banner button */
+.banner-btn:hover {
+  background-color: #e6b800; /* Slightly darker shade of yellow */
+}
+
+
+
+/* About Us Section Styling */
+.about-us {
+  display: flex; /* Flexbox layout */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: center; /* Vertically center align */
+  justify-content: space-between; /* Space between content and image */
+  padding: 40px 20px; /* Section padding */
+  background-color: #f9f9f9; /* Light background */
+  gap: 20px; /* Space between flex items */
+}
+
+/* Content section styling */
+.about-content {
+  flex: 1; /* Take available space */
+  max-width: 600px; /* Maximum width for content */
+}
+
+.about-content h2 {
+  font-size: 32px; /* Heading font size */
+  color: #004d99; /* Primary color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.about-content p {
+  font-size: 16px; /* Paragraph font size */
+  color: #555; /* Subtle text color */
+  line-height: 1.8; /* Improve readability */
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+/* Stats section styling */
+.about-stats {
+  display: flex; /* Flexbox for stats */
+  gap: 20px; /* Space between stats */
+  margin-top: 20px; /* Space above stats */
+}
+
+.stat {
+  text-align: center; /* Center align text */
+}
+
+.stat h3 {
+  font-size: 28px; /* Font size for numbers */
+  color: #004d99; /* Primary color */
+  margin-bottom: 5px; /* Space below number */
+}
+
+.stat p {
+  font-size: 14px; /* Font size for description */
+  color: #777; /* Light text color */
+}
+
+/* Image section styling */
+.about-image {
+  flex: 1; /* Take available space */
+  max-width: 500px; /* Maximum width for image */
+}
+
+.about-image img {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Responsive Styling for smaller screens */
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column; /* Stack content and image */
+    text-align: center; /* Center-align text */
+  }
+
+  .about-content {
+    max-width: 100%; /* Full width for content */
+  }
+
+  .about-image {
+    max-width: 100%; /* Full width for image */
+  }
+}
+
+
+/* Services Section Styling */
+.services {
+  padding: 40px 20px; /* Padding around the section */
+  background-color: #f9f9f9; /* Light background color */
+  text-align: center; /* Center-align text */
+}
+
+.services h2 {
+  font-size: 32px; /* Heading font size */
+  color: #004d99; /* Primary color */
+  margin-bottom: 30px; /* Space below heading */
+}
+
+/* Container for service cards */
+.services-container {
+  display: flex; /* Flexbox for alignment */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center-align cards */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Individual service card styling */
+.service-card {
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Inner padding */
+  text-align: center; /* Center-align text */
+  max-width: 250px; /* Maximum width for card */
+  flex: 1; /* Allow flexibility for responsive layout */
+}
+
+/* Service icon styling */
+.service-card img {
+  width: 80px; /* Fixed width for image */
+  height: 80px; /* Fixed height for image */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* Space below the icon */
+}
+
+/* Service name styling */
+.service-card h3 {
+  font-size: 20px; /* Font size for name */
+  color: #004d99; /* Primary color */
+  margin-bottom: 10px; /* Space below the name */
+}
+
+/* Service description styling */
+.service-card p {
+  font-size: 14px; /* Font size for description */
+  color: #555; /* Subtle text color */
+}
+
+/* Responsive Styling for smaller screens */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+  }
+
+  .service-card {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+}
+
+
+/* Doctor Cards Section Styling */
+.doctor-cards {
+  padding: 20px; /* Padding around the section */
+  background-color: #f9f9f9; /* Light background color */
+  text-align: center; /* Center-align text */
+}
+
+.doctor-cards h2 {
+  font-size: 28px; /* Heading size */
+  color: #004d99; /* Primary color */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Card container for Flexbox layout */
+.card-container {
+  display: flex; /* Flexbox for alignment */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center-align cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Individual doctor card styling */
+.doctor-card {
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 15px; /* Inner padding */
+  text-align: center; /* Center-align text inside card */
+  max-width: 200px; /* Maximum width for card */
+  flex: 1; /* Allow flexibility for responsive layout */
+}
+
+/* Doctor image styling */
+.doctor-card img {
+  width: 100px; /* Fixed width for image */
+  height: 100px; /* Fixed height for image */
+  object-fit: cover; /* Maintain aspect ratio and cover space */
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+/* Doctor name styling */
+.doctor-card h3 {
+  font-size: 18px; /* Font size for name */
+  color: #333; /* Dark text color */
+  margin-bottom: 5px; /* Space below the name */
+}
+
+/* Doctor specialty styling */
+.doctor-card p {
+  font-size: 14px; /* Font size for specialty */
+  color: #666; /* Subtle text color */
+  margin-bottom: 15px; /* Space below the text */
+}
+
+/* Button styling */
+.doctor-card button {
+  background-color: #004d99; /* Primary button color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+.doctor-card button:hover {
+  background-color: #003366; /* Darker shade for hover */
+}
+
+/* Service Cards Section Styling */
+.service-cards {
+  padding: 20px; /* Padding around the section */
+  background-color: #f9f9f9; /* Light background color */
+  text-align: center; /* Center-align text */
+}
+
+.service-cards h2 {
+  font-size: 28px; /* Heading size */
+  color: #004d99; /* Primary color */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Card container for Flexbox layout */
+.card-container {
+  display: flex; /* Flexbox for alignment */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center-align cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Individual service card styling */
+.service-card {
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 15px; /* Inner padding */
+  text-align: center; /* Center-align text inside card */
+  max-width: 200px; /* Maximum width for card */
+  flex: 1; /* Allow flexibility for responsive layout */
+}
+
+/* Service image styling */
+.service-card img {
+  width: 80px; /* Fixed width for image */
+  height: 80px; /* Fixed height for image */
+  object-fit: cover; /* Maintain aspect ratio and cover space */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+/* Service name styling */
+.service-card h3 {
+  font-size: 18px; /* Font size for name */
+  color: #333; /* Dark text color */
+  margin-bottom: 10px; /* Space below the name */
+}
+
+/* Service description styling */
+.service-card p {
+  font-size: 14px; /* Font size for description */
+  color: #666; /* Subtle text color */
+  margin-bottom: 15px; /* Space below the text */
+}
+
+/* Button styling */
+.service-card button {
+  background-color: #004d99; /* Primary button color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+.service-card button:hover {
+  background-color: #003366; /* Darker shade for hover */
+}
+
+
+
+/* Why Choose Us Section Styling */
+.why-choose-us {
+  padding: 40px 20px; /* Section padding */
+  background-color: #f9f9f9; /* Light background */
+  text-align: center; /* Center-align text */
+}
+
+.why-choose-us h2 {
+  font-size: 32px; /* Font size for heading */
+  color: #004d99; /* Primary color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.section-description {
+  font-size: 16px; /* Font size for description */
+  color: #555; /* Subtle text color */
+  margin-bottom: 30px; /* Space below description */
+  line-height: 1.8; /* Improve readability */
+}
+
+/* Features container styling */
+.features-container {
+  display: flex; /* Flexbox for alignment */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px; /* Space between feature cards */
+  justify-content: center; /* Center-align cards */
+}
+
+/* Individual feature card styling */
+.feature-card {
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Inner padding */
+  text-align: center; /* Center-align text */
+  width: 250px; /* Fixed width for cards */
+}
+
+.feature-card img {
+  width: 60px; /* Icon size */
+  height: 60px; /* Maintain square dimensions */
+  margin-bottom: 15px; /* Space below icon */
+}
+
+.feature-card h3 {
+  font-size: 18px; /* Font size for title */
+  color: #004d99; /* Primary color */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.feature-card p {
+  font-size: 14px; /* Font size for description */
+  color: #555; /* Subtle text color */
+  line-height: 1.6; /* Improve readability */
+}
+
+
+
+/* Testimonials Section Styling */
+.testimonials {
+  padding: 40px 20px; /* Section padding */
+  background-color: #f9f9f9; /* Light background */
+  text-align: center; /* Center-align text */
+}
+
+.testimonials h2 {
+  font-size: 32px; /* Font size for heading */
+  color: #004d99; /* Primary color */
+  margin-bottom: 30px; /* Space below heading */
+}
+
+.testimonials-container {
+  display: flex; /* Flexbox for alignment */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px; /* Space between testimonial cards */
+  justify-content: center; /* Center-align cards */
+}
+
+/* Individual testimonial card styling */
+.testimonial-card {
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Inner padding */
+  text-align: center; /* Center-align text */
+  width: 250px; /* Fixed width for cards */
+}
+
+.testimonial-card img {
+  width: 80px; /* Image size */
+  height: 80px; /* Fixed height */
+  border-radius: 50%; /* Circular image */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* Space below image */
+}
+
+.testimonial-text {
+  font-size: 14px; /* Font size for testimonial text */
+  color: #555; /* Subtle text color */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 15px; /* Space below testimonial */
+}
+
+.testimonial-card h3 {
+  font-size: 18px; /* Font size for name */
+  color: #004d99; /* Primary color */
+  margin-bottom: 5px; /* Space below name */
+}
+
+.testimonial-role {
+  font-size: 14px; /* Font size for role/location */
+  color: #777; /* Light text color */
+}
+
+/* Responsive Styling for smaller screens */
+@media (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+  }
+
+  .testimonial-card {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+
+/* Book Appointment Section Styling */
+.book-appointment {
+  padding: 40px 20px; /* Section padding */
+  background-color: #f9f9f9; /* Light background */
+  text-align: center; /* Center-align text */
+}
+
+.book-appointment h2 {
+  font-size: 32px; /* Font size for heading */
+  color: #004d99; /* Primary color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.section-description {
+  font-size: 16px; /* Font size for description */
+  color: #555; /* Subtle text color */
+  margin-bottom: 30px; /* Space below description */
+  line-height: 1.8; /* Improve readability */
+}
+
+/* Form styling */
+.appointment-form {
+  max-width: 600px; /* Limit form width */
+  margin: 0 auto; /* Center align the form */
+  background-color: #fff; /* White form background */
+  padding: 20px; /* Inner padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Individual form group styling */
+.form-group {
+  margin-bottom: 15px; /* Space below each group */
+  text-align: left; /* Align labels to the left */
+}
+
+.form-group label {
+  display: block; /* Block display for label */
+  font-size: 14px; /* Label font size */
+  color: #004d99; /* Primary color for labels */
+  margin-bottom: 5px; /* Space below label */
+}
+
+.form-group input,
+.form-group select {
+  width: 100%; /* Full width inputs */
+  padding: 10px; /* Inner padding */
+  font-size: 14px; /* Font size for inputs */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove outline on focus */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #004d99; /* Focus border color */
+}
+
+/* Submit button styling */
+.submit-btn {
+  background-color: #004d99; /* Primary button color */
+  color: #fff; /* White text */
+  font-size: 16px; /* Button font size */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.submit-btn:hover {
+  background-color: #003366; /* Darker color on hover */
+}
+
+
+
+/* Health Blog Section Styling */
+.health-blog {
+  padding: 40px 20px; /* Section padding */
+  background-color: #f9f9f9; /* Light background */
+  text-align: center; /* Center-align text */
+}
+
+.health-blog h2 {
+  font-size: 32px; /* Font size for heading */
+  color: #004d99; /* Primary color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.section-description {
+  font-size: 16px; /* Font size for description */
+  color: #555; /* Subtle text color */
+  margin-bottom: 30px; /* Space below description */
+  line-height: 1.8; /* Improve readability */
+}
+
+/* Blog container styling */
+.blog-container {
+  display: flex; /* Flexbox for alignment */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px; /* Space between blog cards */
+  justify-content: center; /* Center-align cards */
+}
+
+/* Individual blog card styling */
+.blog-card {
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px; /* Fixed width for cards */
+  text-align: left; /* Left-align content */
+  overflow: hidden; /* Clip content outside of the card */
+}
+
+.blog-card img {
+  width: 100%; /* Full width for the image */
+  height: 150px; /* Fixed height for uniformity */
+  object-fit: cover; /* Maintain aspect ratio and fill space */
+}
+
+.blog-card h3 {
+  font-size: 20px; /* Font size for blog title */
+  color: #004d99; /* Primary color */
+  margin: 15px 10px 10px; /* Space around title */
+}
+
+.blog-card p {
+  font-size: 14px; /* Font size for blog content */
+  color: #555; /* Subtle text color */
+  margin: 0 10px 15px; /* Space around text */
+  line-height: 1.6; /* Improve readability */
+}
+
+.read-more {
+  display: block; /* Make the link a block */
+  text-align: center; /* Center the link text */
+  font-size: 14px; /* Font size for link */
+  color: #004d99; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold for emphasis */
+  margin: 10px; /* Space around the link */
+}
+
+.read-more:hover {
+  color: #003366; /* Darker color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+
+/* Contact Us Section Styling */
+.contact-us {
+  padding: 40px 20px; /* Section padding */
+  background-color: #f9f9f9; /* Light background */
+  text-align: center; /* Center-align text */
+}
+
+.contact-us h2 {
+  font-size: 32px; /* Font size for heading */
+  color: #004d99; /* Primary color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.section-description {
+  font-size: 16px; /* Font size for description */
+  color: #555; /* Subtle text color */
+  margin-bottom: 30px; /* Space below description */
+  line-height: 1.8; /* Improve readability */
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Wrap for smaller screens */
+  gap: 20px; /* Space between form and info */
+  justify-content: center; /* Center-align items */
+}
+
+/* Contact Form Styling */
+.contact-form {
+  max-width: 400px; /* Limit width for form */
+  background-color: #fff; /* White background */
+  padding: 20px; /* Inner padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space below each input */
+  text-align: left; /* Align labels to the left */
+}
+
+.form-group label {
+  display: block; /* Block display for label */
+  font-size: 14px; /* Label font size */
+  color: #004d99; /* Primary color */
+  margin-bottom: 5px; /* Space below label */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Full width inputs */
+  padding: 10px; /* Inner padding */
+  font-size: 14px; /* Font size for inputs */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove outline on focus */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #004d99; /* Focus border color */
+}
+
+/* Submit Button Styling */
+.submit-btn {
+  background-color: #004d99; /* Primary button color */
+  color: #fff; /* White text */
+  font-size: 16px; /* Button font size */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.submit-btn:hover {
+  background-color: #003366; /* Darker color on hover */
+}
+
+/* Contact Information Styling */
+.contact-info {
+  max-width: 300px; /* Limit width for info */
+  text-align: left; /* Left-align content */
+  font-size: 14px; /* Font size for info */
+  color: #555; /* Subtle text color */
+}
+
+.contact-info h3 {
+  font-size: 18px; /* Font size for titles */
+  color: #004d99; /* Primary color */
+  margin-top: 20px; /* Space above each title */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Stack form and info vertically */
+    align-items: center; /* Center-align items */
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+
+/* General Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-links li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 15px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+
+/* Responsive Styling for smaller screens */
+@media (max-width: 768px) {
+  .blog-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+  }
+
+  .blog-card {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+
+/* Responsive Styling for smaller screens */
+@media (max-width: 768px) {
+  .appointment-form {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+
+/* Responsive Styling for smaller screens */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+  }
+
+  .feature-card {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .service-card {
+    max-width: 100%; /* Allow full width for smaller screens */
+  }
+}
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .doctor-card {
+    max-width: 100%; /* Allow full width for smaller screens */
+  }
+}
+
+
+.map-container {
+  width: 100%;
+  max-width: 600px; /* Adjust width as needed */
+  margin: auto;
+  border: 1px solid #ddd;
+}
+iframe {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  border: 0;
+}
+.map-container h2{
+  margin-left: 30%;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center-align items */
+    gap: 10px; /* Add spacing between items */
+  }
+
+  .header .search-bar {
+    width: 100%; /* Full width for search bar on smaller screens */
+    max-width: 400px; /* Limit maximum width */
+  }
+}
+
+
+.banner h1 {
+  font-size: 28px; /* Adjust heading size for smaller screens */
+}
+
+.banner p {
+  font-size: 16px; /* Adjust text size for smaller screens */
+}
+
