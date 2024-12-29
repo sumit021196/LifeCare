@@ -392,7 +392,25 @@
     </div>
   </footer>
   
+ <script>
+    // Number animation script
+    document.querySelectorAll('.stat-number').forEach((stat) => {
+        const updateNumber = () => {
+            const target = +stat.getAttribute('data-target');
+            const current = +stat.innerText;
+            const increment = Math.ceil(target / 100);
 
+            if (current < target) {
+                stat.innerText = current + increment;
+                setTimeout(updateNumber, 20);
+            } else {
+                stat.innerText = target;
+            }
+        };
+
+        updateNumber();
+    });
+</script>
 
 </body>
 
