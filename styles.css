@@ -16,14 +16,14 @@ body {
   display: flex; /* Flexbox layout for alignment */
   align-items: center; /* Center items vertically */
   justify-content: space-between; /* Space items out horizontally */
-  padding: 10px 20px; /* Inner padding for the header */
+  padding: 10px; /* Inner padding for the header */
   background-color: #004d99; /* Dark blue background */
   color: #fff; /* White text color */
 }
 
 /* Logo styling */
 .header .logo {
-  font-size: 24px; /* Font size for the logo */
+  font-size: 14px; /* Font size for the logo */
   font-weight: bold; /* Bold text for emphasis */
 }
 
@@ -34,26 +34,26 @@ body {
   background-color: #fff; /* White background for the search bar */
   border-radius: 5px; /* Rounded corners */
   overflow: hidden; /* Ensure elements don't overflow the container */
- 
-  
+  width: 50%; /* Take half the header's width */
+  max-width: 200px;/* Limit the maximum width */
+  height: 30px;
 }
 
 /* Input field styling */
 .header .search-bar input {
   border: none; /* Remove default border */
-  padding: 8px 10px; /* Inner padding for input */
+  padding: 5px 8px; /* Inner padding for input */
   outline: none; /* Remove focus outline */
   flex: 1; /* Allow input to take up available space */
+  font-size: 14px;
 }
 
 /* Search button styling */
 .header .search-bar button {
-  background-color: #004d99; /* Match header color */
-  color: #fff; /* White text color */
-  border: none; /* Remove border */
-  padding: 8px 12px; /* Padding for button */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s; /* Smooth hover transition */
+   background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
 }
 
 /* Hover effect for search button */
@@ -946,14 +946,13 @@ iframe {
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
   .header {
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: center; /* Center-align items */
-    gap: 10px; /* Add spacing between items */
+    padding: 8px;
   }
 
   .header .search-bar {
-    width: 100%; /* Full width for search bar on smaller screens */
-    max-width: 200px; /* Limit maximum width */
+     width: 60%; /* Adjust search bar width for smaller screens */
+    max-width: 150px;
+    height: 25px;
   }
 }
 
