@@ -953,7 +953,7 @@ iframe {
 
   .header .search-bar {
     width: 100%; /* Full width for search bar on smaller screens */
-    max-width: 400px; /* Limit maximum width */
+    max-width: 200px; /* Limit maximum width */
   }
 }
 
